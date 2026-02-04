@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-blue: #021c49;
+  --text-white: #ffffff;
+  --btn-color: #30a8de;
+  --linear-1: #2863ca;
+  --linear-2: #0744ae;
+  --hover-yellow:#FFC107;
+  --btn-bg:#91D0FD;
+  --border-color:#274C8E;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(font/lato/Lato-Regular.ttf), format(truetype);
+}
+body {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1490px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.cmn-btn {
+  display: inline-block;
+  background: var(--btn-color);
+  color: var(--text-white);
+  padding: 14px 28px;
+  transition: 0.5s ease;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-weight: 18px;
+  font-weight: 400;
+}
+/* -------------------Hedaer Sectoin------------------ */
+.header {
+  background-color: var(--main-blue);
+  padding: 15px 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.navbar-links {
+  margin-left: auto;
+}
+.navlinks {
+  display: flex;
+  align-items: right;
+}
+.navlinks {
+  display: flex;
+  align-items: center;
+}
+.navlinks li {
+  letter-spacing: 6px;
+  padding: 0 22px;
+}
+.navlinks li a {
+  text-transform: uppercase;
+  color: var(--text-white);
+  transition: 0.5s ease;
+}
+.navlinks li a:hover {
+  color: var(--btn-color);
+}
+.cmn-btn:hover {
+  background-color: var(--text-white);
+  color: var(--main-blue);
+  transition: 0.5s ease-in;
+}
+/*--------- Banner section-------------- */
+.banner {
+  background: url(images/banner_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 211px 0 322px 0;
+  display: flex;
+  align-items: flex-start;
+}
+.col60 {
+  max-width: 60%;
+  flex: 0 0 60%; /*flex grow  flex shrink  flex basis*/
+  padding: 0 15px;
+}
+.bannercontent p {
+  font-family: "Lato";
+  font-size: 27px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 23px;
+  /* margin-bottom: 32px; */
+}
+.bannercontent h1 {
+  font-family: "Lato";
+  font-size: 80px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+}
+.bannercontent h2 {
+  font-family: "Lato";
+  font-size: 43px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 32px;
+}
+.banner_btn ul {
+  display: flex;
+}
+.banner_btn ul li {
+  padding: 8.5px;
+}
+.banner_btn_2{
+  background:var(--btn-bg);
+  color: var(--main-blue);
+}
+.banner_btn_2:hover{
+  background: none;
+  border: 2px solid var(--main-blue);
+}
+.brand a{
+  display: block;
+  max-width: 163px;
+} 
+/* -------About Section------ */
+.about {
+  background: url(images/about_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 77px 0 89px 0;
+  display: flex;
+
+}
+.col40 {
+  max-width: 40%;
+  flex: 0 0 40%; /*flex grow  flex shrink  flex basis*/
+  padding: 0 15px;
+}
+.about_title {
+  font-family: "Lato";
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  margin: 0 71px 42px 0;
+}
+.about_content {
+  margin-left: 177px;
+  background: var(--main-blue);
+}
+.aboutcontent{
+  position: relative;
+  z-index: 1;
+}
+.aboutcontent::after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    right:-30px;
+    bottom:-30px;
+    background:radial-gradient(#cfd5db 2px, transparent 2px);
+    background-size:11px 11px;
+    z-index: -1;
+}
+.about_content h3 {
+  font-family: "Lato";
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--text-white);
+}
+.about_content h2 {
+  font-family: "Lato";
+  font-size: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5.5px;
+  color: var(--text-white);
+  margin-bottom: 16px;
+}
+.about_content {
+  padding: 62px 48px 59px 71px;
+  border-radius: 25px;
+}
+.about_content p {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.88;
+  color: var(--text-white);
+  margin-bottom: 30px;
+}
+.about_content_btn {
+  margin-top: 44px;
+}
+
+/* -------Service Section------ */
+.service {
+  background: var(--main-blue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 77px 0 89px 0;
+  display: flex;
+}
+.col30 {
+  max-width: 30%;
+  flex: 0 0 30%;
+  padding: 0 15px;
+}
+.col70 {
+  max-width: 70%;
+  flex: 0 0 70%;
+  padding: 0 15px;
+}
+.service_cart {
+  display: flex;
+  flex-direction: column;
+  padding: 95px 0 101px 0;
+}
+.service_cart_1 {
+  background: linear-gradient(180deg, var(--linear-1), var(--linear-2));
+  padding: 32px 25px 35px 35px;
+  border-radius: 21px;
+  margin-bottom: 29px;
+}
+.service_cart_2 {
+  background: linear-gradient(180deg, var(--linear-1), var(--linear-2));
+  padding: 32px 25px 35px 35px;
+  border-radius: 21px;
+}
+
+.service_cart_1 h3,
+.service_cart_2 h3 {
+  font-family: "Lato";
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.9px;
+  line-height: 1.88;
+  color: var(--text-white);
+}
+.service_cart_1 p,
+.service_cart_2 p {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.88;
+  color: var(--text-white);
+  margin-bottom: 20px;
+}
+.service_cart_1 p a,
+.service_cart_2 p a {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.88;
+  color: var(--text-white);
+}
+.about_service {
+  padding: 190px 0 387px 21px;
+}
+.about_service h3 {
+  font-family: "Lato";
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.9px;
+  color: var(--text-white);
+}
+.about_service h2 {
+  font-family: "Lato";
+  font-size: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5.55px;
+  color: var(--text-white);
+  margin-bottom: 23px;
+}
+.about_service p {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-white);
+  margin-bottom: 26px;
+}
+.book_now_btn a {
+  background: var(--main-blue);
+  border: 2px solid var(--text-white);
+}
+/* ------------Review Section------------ */
+.review {
+  padding: 104px 0 100px 0;
+  display: flex;
+}
+.col33 {
+  max-width: 33.33%;
+  flex: 0 0 33.33%;
+  padding: 0 15px;
+}
+.reviewcontent {
+  text-align: center;
+}
+.reviewcontent h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 3.9px;
+}
+.reviewcontent h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 37px;
+  letter-spacing: 5.55px;
+  margin-bottom: 25px;
+}
+.reviewcontent p {
+  max-width: 1105px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.rating {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 28px;
+}
+.rating img:hover {
+  cursor: pointer;
+  transition: 0.2s ease;
+  transform: scale(1.3);
+  filter: brightness(1.2);
+}
+.review_cart {
+  background-color: var(--text-white);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  border-radius: 21px;
+  padding: 47px 30px 30px 41px;
+}
+.review_cart:hover {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.review_cart p {
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 1.88;
+  margin-bottom: 30px;
+}
+.person_quote {
+  display: flex;
+  justify-content: space-between;
+}
+.person_name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.review_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+  margin-top: 70px;
+}
+.review_btn_1 a:hover{
+  background: var(--btn-bg);
+}
+.review_btn_2 a{
+  background: var(--text-white);
+  color: var(--main-blue);
+  border: 2px solid var(--main-blue);
+}
+.review_btn_2 a:hover{
+  background: var(--btn-bg);
+}
+/* --------------------Booking Section------------------ */
+.booking {
+  position: relative;
+  padding-bottom: 150px;
+}
+.book {
+  position: relative;
+  background: url("images/booking_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 88px 108px 100px 100px;
+  border-radius: 30px;
+}
+.book::after{
+  position: absolute;
+  content: "";
+  background-image: url("images/Ellipse.png");
+  width: 160px;
+  height: 160px;
+  right: -1%;
+  top:-40px;
+  z-index: -1;
+}
+.book_now h3 {
+  font-size: 37px;
+  font-weight: 400;
+  letter-spacing: 5.55px;
+  text-transform: uppercase;
+  color: var(--text-white);
+  margin-bottom: 32px;
+}
+.book_btn a{
+  background-color: var(--btn-color);
+  border: 2px solid var(--text-white);
+}
+/* --------------Footer Section----------- */
+.footer {
+  background: var(--main-blue);
+  padding: 112px 0 48px 0;
+}
+.col20 {
+  max-width: 20%;
+  flex: 0 0 20%;
+  padding: 0 15px;
+}
+.footer_cart_1 img{
+  max-width: 301px;
+  display: block;
+}
+.footer_cart_2 h3,
+.footer_cart_3 h3,
+.footer_cart_4 h3,
+.footer_cart_5 h3  {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 3.9px;
+  color: var(--text-white);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.footer_cart_2 ul li,
+.footer_cart_3 ul li,
+.footer_cart_4 ul li,
+.footer_cart_5 ul li {
+  font-size: 18px;
+  color: var(--text-white);
+  margin-bottom: 15px;
+}
+.footer_cart_2 ul li a,.footer_cart_3 ul li a{
+  color: var(--text-white);
+}
+.footer_cart_3 ul li a:hover{
+  color: var(--btn-bg);
+  transition: 0.5s ease-in;
+  
+}
+.footer_cart_4 a h3:hover{
+  color: var(--btn-color);
+}
+.footer_cart_2 ul li a:hover{
+  color: var(--btn-bg);
+}
+.socials{
+  display: flex;
+  gap: 18px;
+  padding-bottom: 35px;
+  border-bottom: 2px solid var(--border-color);
+}
+.social_icon{
+  color: var(--text-white);
+}
+.social_icon:hover{
+  color: var(--btn-bg);
+}
+.socials li:hover{
+  color: var(--hover-yellow);
+  transition: 0.5s ease;
+  transform: scale(1.3);
+}
+.socials ul li a{
+  color: var(--text-white);
+}
+.footer_copyright_text{
+  margin-top: 23px;
+  text-align: center;
+}
+
+.footer_copyright_text p {
+  color: var(--text-white);
+}
+.footer_copyright_text a {
+  color: var(--text-white);
+}
+.footer_copyright_text a:hover{
+  cursor: pointer;
+  color: var(--btn-color);
+  transition: 0.5s ease;
+}
